@@ -7,7 +7,7 @@ function App() {
   return (
     <div className='h-screen flex'>
       <ToolBarComponent />
-      <div className='w-full bg-red-400'>
+      <div className='w-full bg-red-400 overflow-y-auto'>
         <FCanvas />
       </div>
       <div className='w-[300px] h-full'></div>

@@ -4,11 +4,14 @@ import { generateRandomImage } from "../shared/helpers/generateRandomImage";
 const FCanvas = () => {
   return <div>
     <PhoneFrame
-      safeArray={false}
-      baseWidth={450}
-      type={FrameType.android} >
-      <img src={generateRandomImage({
-      })} alt="" className="w-full" />
+        safeArray={false}
+        baseWidth={400}
+        type={FrameType.ios}
+    >
+      <img src={generateRandomImage({})} alt="" className="w-full"/>
+      <img src={generateRandomImage({})} alt="" className="w-full"/>
+      <img src={generateRandomImage({})} alt="" className="w-full"/>
+      <img src={generateRandomImage({})} alt="" className="w-full"/>
     </PhoneFrame>
   </div>
 }
