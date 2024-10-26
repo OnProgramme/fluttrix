@@ -58,7 +58,6 @@ const PhoneFrame: FC<OwnProps> =
                                 <div
                                     className="relative mx-auto bg-gray-800 h-[calc(var(--phone-width)*0.05)] w-[calc(var(--phone-width)*0.5)] rounded-b-[1.5rem]"></div>
                             </div>
-
                             {/* Contenu */}
                             <div className={
                                 twMerge(
@@ -112,10 +111,10 @@ const PhoneFrame: FC<OwnProps> =
                         {/* Zone de statut en haut pour la caméra */}
                         {safeArray && <div className="w-full h-[calc(var(--phone-width)*0.04)] bg-white"></div>}
 
-                        {/* Contenu */}
+                        {/*Contenu */}
                         <div className={
                             twMerge(
-                                "w-full overflow-y-auto",
+                                "w-full overflow-y-auto bg-red-500",
                                 safeArray ? 'h-[calc(100%-var(--phone-width)*0.04)]' : 'h-full'
                             )
                         }>

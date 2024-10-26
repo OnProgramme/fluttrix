@@ -6,7 +6,7 @@ const FCanvas = () => {
     <PhoneFrame
         safeArray={false}
         baseWidth={400}
-        type={FrameType.ios}
+        // type={FrameType.ios}
     >
       <img src={generateRandomImage({})} alt="" className="w-full"/>
       <img src={generateRandomImage({})} alt="" className="w-full"/>
