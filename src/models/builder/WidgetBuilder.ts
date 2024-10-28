@@ -6,6 +6,7 @@ import Widget from "../Widget";
 import Button from "../widgets/Button";
 import Input from "../widgets/Input";
 import Text from "../widgets/Text";
+import Image from "../widgets/Image";
 
 export default class WidgetBuilder {
   static build(type: WidgetType): Widget {
@@ -14,7 +15,7 @@ export default class WidgetBuilder {
       [WidgetType.ROW]: new Row(),
       [WidgetType.SCAFFOLD]: new Scaffold(),
       [WidgetType.CONTAINER]: new Column(),
-      [WidgetType.IMAGE]: new Column(),
+      [WidgetType.IMAGE]: new Image(),
       [WidgetType.LISTVIEW]: new Column(),
       [WidgetType.INPUT]: new Input(),
       [WidgetType.BUTTON]: new Button(),
