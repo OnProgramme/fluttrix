@@ -1,17 +1,15 @@
 import PhoneFrame, { FrameType } from "../components/frames/PhoneFrame";
-import { generateRandomImage } from "../shared/helpers/generateRandomImage";
+import { useBuildAppInCanvas } from "./useBuildAppInCanvas";
 
 const FCanvas = () => {
+  const { scaffold } = useBuildAppInCanvas()
   return <div>
     <PhoneFrame
-        safeArray={false}
-        baseWidth={400}
-        // type={FrameType.ios}
+      safeArray={!scaffold?.hasAppBar}
+      baseWidth={400}
+      type={FrameType.android}
     >
-      <img src={generateRandomImage({})} alt="" className="w-full"/>
-      <img src={generateRandomImage({})} alt="" className="w-full"/>
-      <img src={generateRandomImage({})} alt="" className="w-full"/>
-      <img src={generateRandomImage({})} alt="" className="w-full"/>
+      {scaffold?.render()}
     </PhoneFrame>
   </div>
 }
